@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <sws:dynamic-wsdl id="personne"                                                           (1)
     portTypeName="Inscription"                                                         (3)
     locationUri="/FakeOSM/"                                                       (4)                             (5)
