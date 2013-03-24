@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:personne xmlns:tns="http://www.example.org/premierSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/premierSchema premierSchema.xsd ">
+  <tns:nom>tns:nom</tns:nom>
+  <tns:prenom>tns:prenom</tns:prenom>
+  <tns:mail>tns:mail</tns:mail>
+  <tns:adresse>tns:adresse</tns:adresse>
+</tns:personne>
