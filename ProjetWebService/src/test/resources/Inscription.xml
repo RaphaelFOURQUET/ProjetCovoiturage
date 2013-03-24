@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personne xmlns:tns="http://www.example.org/premierSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/premierSchema premierSchema.xsd ">
+  <nom>FOURQUET</nom>
+  <prenom>Raphaël</prenom>
+  <mail>raphael.fourquet@univ-tlse3.fr</mail>
+  <adresse>118 Route de Narbonne</adresse>
+  <latitude>100.0</latitude>
+  <longitude>100.0</longitude>
+</personne>
