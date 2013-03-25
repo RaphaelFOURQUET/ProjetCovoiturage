@@ -9,9 +9,9 @@ import org.springframework.ws.server.endpoint.annotation.XPathParam;
 import org.w3c.dom.Element;
 
 
-import iaws.raphaelyaya.ProjetWebService.coordonneesService.FakeOSM;
 import iaws.raphaelyaya.ProjetWebService.data.BaseDePersonnes;
 import iaws.raphaelyaya.ProjetWebService.data.Personne;
+import iaws.raphaelyaya.ProjetWebService.inscriptionService.FakeOSM;
 
 
 /**
