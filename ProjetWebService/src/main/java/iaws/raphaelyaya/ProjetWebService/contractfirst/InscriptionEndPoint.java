@@ -42,14 +42,13 @@ public class InscriptionEndPoint {
         // parse le XML de InscriptionRequest pour extraire les informations utiles
 
 
-        // TODO invoquer le service OpenStreetMap pour récupérer lati/longi
-		double latitude = FakeOSM.getLatitude(adresse);
-		double longitude = FakeOSM.getLongitude(adresse);
-		// TODO inscrire à la bd ou liste de personnes
-		Personne p = new Personne(nom, prenom, mail, adresse, latitude, longitude);
+        // invoquer le service OpenStreetMap pour récupérer lati/longi
+		FakeOSM osm = new FakeOSM();
+		Personne p = osm.inscription(personne);
+		// inscrire à la bd ou liste de personnes
 		BaseDePersonnes.inscription(p);
 
-        // Transforme en élément XML ad-hoc pour le retour
+        //TODO Transforme en élément XML ad-hoc pour le retour
         // Inscription.xml à creer? quand ?
         Element elt = XmlHelper.getRootElementFromFileInClasspath("Inscription.xml") ;
         return elt;

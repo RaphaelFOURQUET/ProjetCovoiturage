@@ -10,6 +10,6 @@ http://www.springframework.org/schema/web-services http://www.springframework.or
     <bean id="inscriptionEndPoint" class="iaws.raphaelyaya.ProjetWebService.contractfirst.InscriptionEndpoint">
         <constructor-arg name="inscriptionService" ref="inscriptionService"/>
     </bean>
-    <bean id="inscriptionService" class="iaws.raphaelyaya.ProjetWebService.coordonneesService.FakeOSM" />
+    <bean id="inscriptionService" class="iaws.raphaelyaya.ProjetWebService.service.impl.FakeOSM" />
 
 </beans>

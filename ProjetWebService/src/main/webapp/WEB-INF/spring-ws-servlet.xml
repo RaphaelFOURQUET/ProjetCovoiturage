@@ -7,18 +7,21 @@ http://www.springframework.org/schema/web-services http://www.springframework.or
 
     <sws:annotation-driven/>
     
+    <!-- TODO a verifier -->
     <sws:dynamic-wsdl 	id="personne"
-   						portTypeName="Inscription"
-    					locationUri="/FakeOSM/"
+   						portTypeName="InscriptionService"	
+    					locationUri="/inscriptionService/"
     					targetNamespace="iaws.raphaelyaya.ProjetWebService.contractfirst/exemple">
+    					<!-- d'ou sort ce exemple ???  -->
   		<sws:xsd location="/WEB-INF/xsd/Personne.xsd"/>
 	</sws:dynamic-wsdl>
 
     <bean id="inscriptionEndPoint"
           class="iaws.relevenotes.ws.contractfirst.ReleveNotesEndpoint">
-        <constructor-arg name="releveNotesService" ref="releveNotesService"/>
+        <constructor-arg name="inscriptionService" ref="inscriptionService"/>
     </bean>
     <bean id="inscriptionService"
-          class="iaws.relevenotes.services.impl.DummyReleveNotesService"/>
+          class="iaws.relevenotes.services.FakeOSM"/>
+          <!-- Remplacer par la vraie impl quand codée -->
 
 </beans>
