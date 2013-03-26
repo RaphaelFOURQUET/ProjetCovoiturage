@@ -1,4 +1,4 @@
-package iaws.raphaelyaya.ProjetWebService.inscriptionService;
+package iaws.raphaelyaya.ProjetWebService.service;
 
 import iaws.raphaelyaya.ProjetWebService.data.Personne;
 
