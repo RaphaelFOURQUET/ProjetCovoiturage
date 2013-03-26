@@ -11,7 +11,7 @@ import org.w3c.dom.Element;
 
 import iaws.raphaelyaya.ProjetWebService.data.BaseDePersonnes;
 import iaws.raphaelyaya.ProjetWebService.data.Personne;
-import iaws.raphaelyaya.ProjetWebService.service.FakeOSM;
+import iaws.raphaelyaya.ProjetWebService.service.impl.FakeOSM;
 
 
 /**
